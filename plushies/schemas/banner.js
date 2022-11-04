@@ -12,11 +12,6 @@ export default {
             },
         },
         {
-            name: 'buttonText',
-            title: 'ButtonText',
-            type: 'string',
-        },
-        {
             name: 'product',
             title: 'Product',
             type: 'string',
@@ -37,23 +32,8 @@ export default {
             type: 'string',
         },
         {
-            name: 'largeText1',
-            title: 'LargeText1',
-            type: 'string',
-        },
-        {
-            name: 'largeText2',
-            title: 'LargeText2',
-            type: 'string',
-        },
-        {
-            name: 'discount',
-            title: 'Discount',
-            type: 'string',
-        },
-        {
-            name: 'saleTime',
-            title: 'SaleTime',
+            name: 'largeText',
+            title: 'LargeText',
             type: 'string',
         },
     ],

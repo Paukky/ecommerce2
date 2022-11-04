@@ -4,8 +4,8 @@
     "name": "Plushies"
   },
   "api": {
-    "projectId": "lsnho3n0",
-    "dataset": "product"
+    "projectId": "wdn8jrma",
+    "dataset": "production"
   },
   "plugins": [
     "@sanity/base",
