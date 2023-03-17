@@ -8,7 +8,7 @@ import { Grid } from '@mui/material';
 const Home= ({products, bannerData }) =>{
   return (
     <React.Fragment>
-      {/* <HeroBanner heroBanner={bannerData.length && bannerData[0]}/> */}
+      <HeroBanner heroBanner={bannerData.length && bannerData[0]}/>
       <Container
         sx={{
           marginTop: '2em'
@@ -27,11 +27,12 @@ const Home= ({products, bannerData }) =>{
 }
 
 export const getServerSideProps = async () => {
-  const query = '*[_type == "product"]';
-  const products = await client.fetch(query);
+
+  const products = await client.fetch('*[_type == "product"]');
+  const bannerData = await client.fetch('*[_type == "banner"]');
 
   return {
-    props: { products}
+    props: { products, bannerData }
   }
 }
 
