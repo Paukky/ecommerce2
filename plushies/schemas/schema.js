@@ -1,8 +1,8 @@
 import product from './product';
 import banner from './banner';
 
-export default createSchema({
+export default [
   product,
   banner
-})
+]
   
