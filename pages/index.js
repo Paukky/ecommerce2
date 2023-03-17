@@ -26,7 +26,7 @@ const Home= ({products, bannerData }) =>{
   )
 }
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
 
   const products = await client.fetch('*[_type == "product"]');
   const bannerData = await client.fetch('*[_type == "banner"]');
